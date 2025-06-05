@@ -8,8 +8,8 @@ const cors = require('cors'); // Importing CORS middleware
 conn();
 
 app.use(cors({
-  origin: 'http://localhost:5173', // or your frontend URL
-  exposedHeaders: ['Auth-Token']   // <--- THIS LINE IS NEEDED
+  origin: 'http://localhost:5173', 
+  exposedHeaders: ['Auth-Token']   
 }));
 app.use(express.json()); // Middleware to parse JSON bodies
 
